@@ -1,0 +1,151 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 15px 50px;
+  margin-left: 70%;
+}
+.nav-links {
+  color: #a3dbfc;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  margin-left: 30px;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #00bcd4;
+  transform: translateY(-3px);
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00bcd4;
+  transition: width 0.3s ease;
+}
+.nav-links:hover::after {
+  width: 100%;
+}
+.wrapper {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: #63805c;
+}
+.tit span::after{
+    content: 'Web Developer';
+    animation: words 6s infinite;
+}
+@keyframes words {
+    0%, 33%{
+        content: 'Web Developer';
+        color: #00ff7f;
+    }
+    34%, 66%{
+        content: 'Software Engineer';
+        color: #ff00ff;
+    }
+    67%, 100%{
+        content: "Full stack Developer";
+        color: #ffd700;
+    }
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #023336;
+    margin: 0;
+    padding: 20px;
+}
+.head {
+    color: #023336;
+    margin-bottom: 15px;
+}
+h3 {
+    color: #023336;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6c63ff;
+}
+h2{
+    border-bottom: 2px solid #6c63ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #023336;
+}
+h4 {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #023336;
+}
+.home{
+    display: flex;
+    text-align: justify;
+    justify-content: start;
+}
+.home p{
+    margin-top: 43px;
+    margin-bottom: 43px;
+    margin-left: 5%;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+.item{
+    background-color: #EAF8E7;
+    border-radius: 12%;
+    padding: 2%;
+    text-align: left;
+    li{
+        color: #4DA674
+    }
+}
+.items {
+    margin-bottom: 10px;
+}
+
+.item-title {
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+.item-details {
+    margin-left: 15px;
+    color: #555;
+}
+.sections {
+    margin-bottom: 20px;
+}
+
+ul{
+        padding-left: 20px;
+        color: #555;
+}
+.profile-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #C1E6BA;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(98, 219, 199, 0.699);
+    margin-top: 3%;
+}
+.ulo {
+    display: flex;
+    justify-content: space-between;
+}
+.profile-container img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
